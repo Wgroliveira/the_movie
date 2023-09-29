@@ -1,0 +1,53 @@
+.shows {
+  padding: 8px 16px;
+  margin-left: 2px;
+  margin-right: 5px; 
+  margin-bottom: 48px;
+  width: 100%;
+
+  // Estilos para o elemento 'container' dentro do bloco 'shows'
+  &__container {
+    width: 100%;
+  }
+
+  // Estilos para o elemento 'logo' dentro do bloco 'shows'
+  &__logo {
+    width: 100%;
+  }
+
+  h2 {
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 40px;
+  }
+
+  // Estilos para os cards
+  .card {
+    margin: 6px 2px;
+    width: 144px;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    // Estilos para a imagem dentro do card
+    img {
+      width: 144px;
+      height: 160px; /* Ajuste a altura conforme necessário */
+      object-fit: cover;
+      border-bottom: 1px solid #ddd;;
+    }
+
+    // Estilos para o texto dentro do card
+    .card-text {
+      padding: 16px;
+      text-align: center;
+    }
+  }
+}

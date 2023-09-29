@@ -1,0 +1,17 @@
+.footer {
+    background-image: url(/dist/image/capa/video-1668906_1280.jpg);
+    color: #fff; // Cor do texto (ajuste conforme necessário)
+    padding: 20px; // Espaçamento interno
+    margin-left: -8px;
+    width: 1520px;
+    height: 60px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+
+    &__copyright {
+        font-size: 14px; // Tamanho da fonte (ajuste conforme necessário)
+      }
+
+}
+

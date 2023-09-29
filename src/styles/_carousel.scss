@@ -1,0 +1,77 @@
+// Estilos para o bloco 'carousel'
+.carousel {
+   margin-left: 4px;
+   margin-right: 2px;
+    &.slide {;
+
+      position: relative;
+      z-index: 1;
+  
+      // Estilos para o carrossel interno
+      &-inner {
+        display: flex;
+      }
+  
+      // Estilos para cada item do carrossel
+      &-item {
+        width: 100%;
+        transition: opacity 0.5s ease;
+  
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+      }
+  
+      // Estilos para os controles do carrossel
+      &-control-prev,
+      &-control-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        font-size: 24px;
+  
+        span {
+          display: inline-block;
+        }
+      }
+  
+      &-control-prev {
+        left: 10px;
+      }
+  
+      &-control-next {
+        right: 10px;
+      }
+  
+      // Estilos para os indicadores do carrossel
+      &-indicators {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+  
+        button {
+          background-color: #fff;
+          border: 1px solid #ddd;
+          width: 10px;
+          height: 10px;
+          margin: 0 5px;
+          padding: 0;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+  
+          &.active {
+            background-color: #333;
+          }
+        }
+      }
+    }
+  }
+  
